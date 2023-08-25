@@ -1,0 +1,202 @@
+html{
+    font-family: 'Nunito', sans-serif;
+}
+
+.header{
+    text-align: center;
+    margin: auto;
+    background-color: #ffffffef;
+}
+
+.header_logo{
+    margin-top: .3em;
+    width: 5em;
+    height: auto;
+}
+
+#hamburger{
+    background-color: #ffffffef;
+    color: #606BA6;
+    display: block;
+    text-align: center;
+    padding: 0.3em;
+    cursor: pointer;
+    font-size: 2em;
+}
+
+.header-nav{
+    display: none;
+}
+
+.header-nav.show{
+    display: block;
+}
+
+ul{
+    margin: 0;
+}
+
+.header-nav ul{
+    list-style-type: none;
+    padding: 0;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    font-size: .8em;
+}
+
+.header-nav a{
+    color: #F2A88D;
+    text-decoration: none;
+    display: block;
+    padding: 1em;
+}
+
+.header-nav a:hover{
+    background-color: color-mix(in srgb, #606BA6, #ffffff 20%);
+}
+
+main{
+    padding: 2em;
+    height: 78vh;
+}
+
+.principal{
+    background-image: url(/imagens/background.gif);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-color: initial;
+    display: flex;
+}
+
+.button{
+    text-align: center;
+    margin: auto;
+}
+
+button{
+    border-radius: 1em;
+    filter: drop-shadow(3px 3px 4px #bdbdbd);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(9.2px);
+    -webkit-backdrop-filter: blur(3.2px);
+    border: 2px solid #bdbdbd54;
+    background-color: #606aa656;
+    padding: .9em;
+    text-transform: uppercase;
+    color: #F2A88D;
+    font-weight: 600;
+    font-size: 1em;
+}
+
+footer{
+    background-color: #fff9f9e7;
+    padding: .2em;
+    margin-top: 1em;
+}
+
+footer ul{
+    padding: 0;
+}
+
+footer li{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+footer li a{
+    text-decoration: none;
+    font-size: 1.3em;
+    color: #606BA6;
+}
+
+footer li a:hover{
+    color: #F2A88D;
+}
+
+footer p{
+    color: #606BA6;
+    font-size: 13px; 
+    font-weight: 200;
+    font-weight: bold;
+}
+
+@media screen and (min-width: 48em){
+    #hamburger{
+        display: none;
+    }
+
+    .header{
+        position: fixed;
+        z-index: 2;
+        top: 0;
+        width: 100%;
+        height: 80px;
+        background-color: #ffffffef;
+        text-align: center;
+        box-shadow: 1px 4px 6px #7c7c7c1a;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header_logo{
+        margin-left: 2em;
+    }
+
+    .header-nav{
+        display: block;
+    }
+
+    .header-nav ul{
+        margin-right: 2em;
+        font-size: .9em;
+    }
+
+    .header-nav li{
+        display: inline-block;
+    }
+    
+    .header-nav a{
+        border-radius: 5px;
+    }
+
+    .header-nav a:hover{
+        background-color: #606aa69f;
+        color: #ffffff;
+    }
+
+    main{
+        min-height: 29.5em;
+        position: relative;
+        margin-top: 5.1em;
+        display: flex;
+    }
+    
+    footer{
+        position: fixed;
+        z-index: 6;
+        background-color: #fff9f9b4;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        bottom:0;
+        left: 0;
+        margin: 0 auto;
+        width: 100%;
+        height: 30px;
+        padding: 1px;
+    }
+
+    footer ul{
+        display: flex;
+        align-items: center;
+    }
+    
+    footer li{
+        display:inline-block;
+        padding: .8em;
+    }
+
+}
