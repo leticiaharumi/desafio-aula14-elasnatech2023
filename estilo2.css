@@ -50,3 +50,13 @@ footer h4{
     font-weight: 200;
     font-weight: bold;
 }
+
+h5{
+    text-transform: uppercase;
+    padding: 1.3em;
+}
+
+.carousel-caption h5{
+    color: #F2A88D;
+    filter: drop-shadow(3px 3px 4px #201e1e);    
+}
