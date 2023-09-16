@@ -61,7 +61,7 @@ main{
 }
 
 .principal{
-    background-image: url(/imagens/background.gif);
+    background-image: url(imagens/background.gif);
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
